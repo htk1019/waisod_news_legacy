@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>WAISOD뉴스 주소가 바뀌었습니다</title>
+<script>
+// 같은 경로 · 질의 · # 그대로 새 주소로 보낸다(뒤로 가기에 이 쪽을 남기지 않는다).
+location.replace("https://news.waedge.ai" + location.pathname + location.search + location.hash);
+</script>
+<noscript><meta http-equiv="refresh" content="0; url=https://news.waedge.ai/"></noscript>
+<style>body{font-family:system-ui,sans-serif;margin:4rem auto;max-width:32rem;padding:0 1rem;color:#111}a{color:#1d4ed8}</style>
+</head>
+<body>
+<p>WAISOD뉴스 주소가 <a id="to" href="https://news.waedge.ai/">https://news.waedge.ai</a> 로 바뀌었습니다. 잠시 뒤 새 주소로 이동합니다.</p>
+<script>
+var a = document.getElementById("to"); a.href = "https://news.waedge.ai" + location.pathname + location.search + location.hash;
+</script>
+</body>
+</html>
